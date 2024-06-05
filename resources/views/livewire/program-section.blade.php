@@ -38,7 +38,7 @@
                         @foreach ($this->courses as $course)
                             <div wire:key="{{ $course->id }}"
                                 class="card w-auto lg:w-96 bg-base-100 shadow-2xl rounded-2xl">
-                                <figure><img src="{{ $course->image }}" alt="Shoes" class="rounded-t-2xl" /></figure>
+                                <figure><img src="{{config("app.image_path")}}/{{ $course->image }}" alt="{{ $course->name }}" class="rounded-t-2xl" /></figure>
                                 <div class="p-5">
                                     <h2 class=" font-bangla font-extrabold text-xl text-black">{{ $course->fullName }}
                                     </h2>
