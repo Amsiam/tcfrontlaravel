@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{config("app.name")}}</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- For font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -110,33 +110,32 @@
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a href="#program" class="hover:text-black">প্রোগ্রামসমূহ</a></li>
-                     </ul>
+                    </ul>
                 </div>
                 <a href="/" class="">
-                    <img class="w-48 h-16 "
-                        src="{{asset("assets/image/logo.png")}}" alt=""></a>
+                    <img class="w-48 h-16 " src="{{ asset('assets/image/logo.png') }}" alt=""></a>
             </div>
             <div class="navbar-end flex lg:flex-row gap-3 lg:text-lg text-gray-600 font-bold">
                 <a href="#program" class="hover:text-black hidden lg:flex">প্রোগ্রামসমূহ</a>
 
-                <a href="{{route("register")}}"
+                <a href="{{ route('register') }}"
                     class="btn bg-gradient-to-r from-green-600 to-emerald-500 hover:from-[#fa6a9a]  hover:to-orange-400 text-white  lg:text-xl text-base font-bold rounded-full font-lato">Join
                     Now</a>
             </div>
         </div>
     </section>
 
-    {{$slot}}
+    {{ $slot }}
 
-    <footer class="bg-teal-500 lg:px-24 sm:px-5 md:px-5 pt-16 pb-6">
+    <footer class="bg-teal-500 lg:px-24 text-center sm:px-12 md:px-12 pt-16 pb-6 w-full">
         <div class="flex flex-col lg:flex-row w-full justify-evenly py-6">
-            <div class="w-3/4">
-                <img src="{{asset('assets/image/logo.png')}}"  alt="" class="w-3/4">
+            <div class="lg:w-3/4 sm:w-full md:w-full">
+                <img src="{{ asset('assets/image/logo.png') }}" alt="" class="w-3/4">
             </div>
             <div class="text-white text-sm font-normal flex flex-col gap-2">
                 <h6 class="font-bangla text-2xl font-semibold">Help</h6>
                 <a class="link link-hover">About Us</a>
-                <a  class="link link-hover">Branch List</a>
+                <a class="link link-hover">Branch List</a>
                 <a class="link link-hover">Privacy Policy</a>
                 <a class="link link-hover">Terms & Conditions</a>
             </div>
@@ -151,7 +150,8 @@
                 <a>Helpline: 01734500238</a>
                 <a>Email: tusherscareofficial@gmail.com</a>
                 <div class="flex flex-row items-center gap-4">
-                    <a href="https://www.facebook.com/tushercare"><i class="fa-brands fa-facebook rounded-full text-3xl"></i></a>
+                    <a href="https://www.facebook.com/tushercare"><i
+                            class="fa-brands fa-facebook rounded-full text-3xl"></i></a>
                     <a href=""><i class="fa-brands fa-youtube rounded-full text-3xl"></i></a>
                     <a href=""><i class="fa-brands fa-instagram rounded-full text-3xl"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin-in rounded-full text-3xl"></i></a>
@@ -160,12 +160,14 @@
         </div>
         <hr>
         <div class="py-3">
-<div class="flex justify-between gap-2">
+            <div class="flex justify-between gap-2">
 
-    <div class="text-sm font-normal text-white w-full">Copyright © Tusher's Care. All rights reserved. {{date("Y")}}</div>
+                <div class="text-sm font-normal text-white w-full">Copyright © Tusher's Care. All rights reserved.
+                    {{ date('Y') }}</div>
 
-        <div class="flex justify-end w-full text-sm font-normal text-white ">Developed By:  <a href="https://facebook.com/bear.siam.7"> Aslam Mahmud Siam</div>
-        </div>
+                <div class="flex justify-end w-full text-sm font-normal text-white ">Developed By: <a
+                        href="https://facebook.com/bear.siam.7"> Aslam Mahmud Siam</div>
+            </div>
         </div>
     </footer>
 
