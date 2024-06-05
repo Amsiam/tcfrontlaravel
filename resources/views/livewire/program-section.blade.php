@@ -44,8 +44,9 @@
                                     </h2>
                                     {{ $course->shortDesc }}
                                     <div class="flex w-full justify-center text-base font-normal px-3">
-                                        <a href=""
-                                            class="bg-gradient-to-r w-full text-center from-blue-600 to-purple-500 hover:from-purple-400 hover:to-blue-400 text-white font-bold py-2 px-4 rounded-full">Details</a>
+                                        <a href="{{route("register")}}"
+                                            class="bg-gradient-to-r w-full text-center from-blue-600 to-purple-500 hover:from-purple-400 hover:to-blue-400 text-white font-bold py-2 px-4 rounded-full">
+                                            Join Now</a>
                                     </div>
                                 </div>
                             </div>
