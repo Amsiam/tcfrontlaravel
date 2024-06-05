@@ -128,7 +128,7 @@
 
     {{$slot}}
 
-    <footer class="bg-teal-500 px-24 pt-16 pb-6">
+    <footer class="bg-teal-500 lg:px-24 sm:px-5 md:px-5 pt-16 pb-6">
         <div class="flex flex-col lg:flex-row w-full justify-evenly py-6">
             <div class="w-3/4">
                 <img src="{{asset('assets/image/logo.png')}}"  alt="" class="w-3/4">
