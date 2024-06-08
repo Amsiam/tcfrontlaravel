@@ -33,7 +33,7 @@
 
                 <!-- card -->
                 <div class="flex flex-col gap-8">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
 
                         @foreach ($this->courses as $course)
                             <div wire:key="{{ $course->id }}"
