@@ -5,7 +5,7 @@
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
 
          @foreach ($this->sliders as $key => $slider)
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="hidden duration-[2000ms] ease-in-out" data-carousel-item>
             <img src="{{config("app.image_path")}}/{{$slider->image}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         @endforeach
@@ -34,8 +34,6 @@
         </span>
     </button>
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 
 </section>
