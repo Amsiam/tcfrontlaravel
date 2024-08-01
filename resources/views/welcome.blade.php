@@ -11,6 +11,12 @@
     @livewire("program-section")
 
 
+    @livewire("safollo-section")
+
+
+    @livewire("sofol-section")
+
+
 
     <section class="mx-auto bg-[#F5FDFF] lg:px-0 px-3 py-5 lg:py-16">
         <div class="border-b border-[#6ABE45] mx-10 lg:mx-96 ">

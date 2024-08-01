@@ -11,7 +11,7 @@ class SliderSection extends Component
 
     #[Computed()]
     public function sliders()  {
-        return Slider::latest()->where("active",1)->get();
+        return Slider::latest()->where("active", 1)->where("type", 1)->get();
     }
 
     public function render()

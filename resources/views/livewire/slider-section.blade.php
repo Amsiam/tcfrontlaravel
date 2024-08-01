@@ -1,12 +1,12 @@
-<section class="mx-3 h-96 lg:mx-14 my-2 lg:my-3">
+<section class="mx-3 h-[calc(100vh-100px)] lg:mx-14 my-2 lg:my-3">
 
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <div class="relative h-[calc(100vh-100px)] overflow-hidden rounded-lg">
 
          @foreach ($this->sliders as $key => $slider)
-        <div class="hidden duration-[10000ms] ease-in-out" data-carousel-item>
-            <img src="{{config("app.image_path")}}/{{$slider->image}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="hidden bg-gray-500 duration-[10000ms] ease-in-out" data-carousel-item>
+            <img src="{{config("app.image_path")}}/{{$slider->image}}" class="absolute h-[calc(100vh-150px)] block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         @endforeach
     </div>

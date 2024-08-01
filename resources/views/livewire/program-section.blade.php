@@ -1,5 +1,5 @@
 <div id="program">
-    <section class="mx-3 lg:mx-14 my-14">
+    <section class="mx-3 lg:mx-14 my-14 max-w-screen-2xl">
         <div class="mx-9 md:mx-56 lg:mx-72 text-center">
             <p
                 class="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-black text-[#0f0254] px-2 py-1 lg:py-3  border-b border-[#0f0254] text-center">
