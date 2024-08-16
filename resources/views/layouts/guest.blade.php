@@ -19,8 +19,7 @@
     <!-- font bangla -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
 
@@ -68,7 +67,7 @@
         .bg1 {
             background-image: url(images/bg\ .png);
             background-size: contain;
-            opacity: 30%;
+            opacity: 100%;
         }
 
         .bg2 {
@@ -108,24 +107,54 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a href="#program" class="hover:text-black">প্রোগ্রামসমূহ</a></li>
+                        <li><a href="#program" class="hover:text-black">
+                            <font face="hind siliguri">প্রোগ্রামস মূহ    </font></a></li>
                     </ul>
                 </div>
                 <a href="/" class="">
-                    <img class="w-48 h-16 " src="{{ asset('assets/image/logo.png') }}" alt=""></a>
+                    <img class="w-45 h-16 " src="{{ asset('assets/image/logo1.png') }}" alt=""></a>
             </div>
             <div class="navbar-end flex lg:flex-row gap-3 lg:text-lg text-gray-600 font-bold">
-                <a href="#program" class="hover:text-black hidden lg:flex">প্রোগ্রামসমূহ</a>
-
+                <a href="#program" class="hover:text-black hidden lg:flex"> <font face="hind siliguri" size="5px" color="red">    প্রোগ্রামসমূহ               </font> </a>
+&nbsp
                 <a href="{{ route('register') }}"
                     class="btn bg-gradient-to-r from-green-600 to-emerald-500 hover:from-[#fa6a9a]  hover:to-orange-400 text-white  lg:text-xl text-base font-bold rounded-full font-lato">Join
                     Now</a>
+
+         &nbsp
+         <a href="https://png.pngtree.com/png-clipart/20220704/original/pngtree-coming-soon-banner-style-png-image_8316626.png">
+    <button
+        style="
+            background: linear-gradient(45deg, #ff6b6b, #f7e627, #6bffb3, #6bafff, #ab6bff);
+            background-size: 300% 300%;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-position 0.5s, transform 0.2s;"
+        onmouseover="this.style.backgroundPosition='right center'; this.style.transform='scale(1.05)';"
+        onmouseout="this.style.backgroundPosition='left center'; this.style.transform='scale(1)';"
+        onmousedown="this.style.transform='scale(0.95)';"
+        onmouseup="this.style.transform='scale(1)';">
+        Login
+    </button>
+
+
+                  </a>
+
+
+
+
+
             </div>
         </div>
     </section>
 
     {{ $slot }}
-
+<div color="red">
     <footer class="bg-teal-500 lg:px-24 text-center sm:px-12 md:px-12 pt-16 pb-6 w-full">
         <div class="flex flex-col lg:flex-row w-full justify-evenly py-6">
             <div class="lg:w-3/4 sm:w-full md:w-full">
@@ -145,14 +174,17 @@
             </div>
             <div class="text-white text-sm font-normal flex flex-col gap-3">
                 <h6 class="font-bangla text-2xl font-semibold">Get In Touch</h6>
-                <a>Address: খাঁন ভবন (২য় তলা ) সোনালী ব্যাকের মোড়, ঝিলটুলি ফরিদপুর।</a>
-                <a>Helpline: 01734500238</a>
-                <a>Email: tusherscareofficial@gmail.com</a>
+
+                <a> <font face="hind siliguri" size="4px">
+                খাঁন ভবন (২য় তলা ) সোনালী ব্যাকের মোড়, ঝিলটুলি ফরিদপুর।</font> </a>
+                Helpline: 01734500238 <br>
+                Email: tusherscareofficial@gmail.com
                 <div class="flex flex-row items-center gap-4">
-                    <a href="https://www.facebook.com/tushercare"><i
-                            class="fa-brands fa-facebook rounded-full text-3xl"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube rounded-full text-3xl"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram rounded-full text-3xl"></i></a>
+                    <a href="https://www.facebook.com/tushercare">
+                        <i class="fa-brands fa-facebook rounded-full text-3xl"></i></a>
+                    <a href="https://www.youtube.com/@tusherscare514">
+                    <i class="fa-brands fa-youtube rounded-full text-3xl"></i></a>
+                    <a href="https://www.instagram.com/tushers_care/"><i class="fa-brands fa-instagram rounded-full text-3xl"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin-in rounded-full text-3xl"></i></a>
                 </div>
             </div>
@@ -165,8 +197,9 @@
                     {{ date('Y') }}</div>
 
                 <div class="flex justify-end w-full text-sm font-normal text-white ">Developed By: <a
-                        href="https://facebook.com/bear.siam.7"> Aslam Mahmud Siam</div>
+                        href="https://facebook.com/ber.siam.7"> Aslam Mahmud Siam</div>
             </div>
+        </div>
         </div>
     </footer>
 

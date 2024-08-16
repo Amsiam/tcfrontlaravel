@@ -1,9 +1,13 @@
-<div id="program">
+<div id="program" align="center">
     <section class="mx-3 lg:mx-14 my-14 max-w-screen-2xl">
         <div class="mx-9 md:mx-56 lg:mx-72 text-center">
+
             <p
                 class="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-black text-[#0f0254] px-2 py-1 lg:py-3  border-b border-[#0f0254] text-center">
-                সময়োপযোগী প্রোগ্রামসমূহ</p>
+                       <font face="hind siliguri"> <b>
+                আমাদের        চলমান
+
+                       প্রোগ্রামসমূহ</b>  </font> </p>
         </div>
         <div class="px-5">
             <div class="">
@@ -37,7 +41,7 @@
 
                         @foreach ($this->courses as $course)
                             <div wire:key="{{ $course->id }}"
-                                class="card w-auto lg:w-96 bg-base-100 shadow-2xl rounded-2xl">
+                                class="card w-auto lg:w-96 bg-base-100 shadow-2xl rounded-2xl" align="left">
                                 <figure><img src="{{config("app.image_path")}}/{{ $course->image }}" alt="{{ $course->name }}" class="rounded-t-2xl" /></figure>
                                 <div class="p-5">
                                     <h2 class=" font-bangla font-extrabold text-xl text-black">{{ $course->fullName }}
