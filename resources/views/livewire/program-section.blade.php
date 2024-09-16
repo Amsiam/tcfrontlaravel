@@ -1,25 +1,25 @@
-<div id="program" align="center">
+<div id="program" style="text-align: center">
     <section class="mx-3 lg:mx-14 my-14 max-w-screen-2xl">
         <div class="mx-9 md:mx-56 lg:mx-72 text-center">
 
             <p
                 class="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-black text-[#0f0254] px-2 py-1 lg:py-3  border-b border-[#0f0254] text-center">
-                       <font face="hind siliguri"> <b>
-                আমাদের        চলমান
+                <font face="hind siliguri"> <b>
+                        আমাদের চলমান
 
-                       প্রোগ্রামসমূহ</b>  </font> </p>
+                        প্রোগ্রামসমূহ</b> </font>
+            </p>
         </div>
         <div class="px-5">
             <div class="">
                 <div class="w-full flex flex-col lg:flex-row gap-5 pt-10 pb-7">
                     <div class=" w-full">
-                        <select
-                        wire:model.live="classs"
+                        <select wire:model.live="classs"
                             class="p-2 shadow bg-base-100 rounded-full w-full text-base lg:text-xl font-semibold  outline-blue-300">
                             <option value="">All Class</option>
 
                             @foreach ($this->classes as $classs)
-                            <option value="{{$classs->id}}">{{$classs->name}}</option>
+                                <option value="{{ $classs->id }}">{{ $classs->name }}</option>
                             @endforeach
 
                         </select>
@@ -42,14 +42,16 @@
                         @foreach ($this->courses as $course)
                             <div wire:key="{{ $course->id }}"
                                 class="card w-auto lg:w-96 bg-base-100 shadow-2xl rounded-2xl" align="left">
-                                <figure><img src="{{config("app.image_path")}}/{{ $course->image }}" alt="{{ $course->name }}" class="rounded-t-2xl" /></figure>
+                                <figure><img src="{{ config('app.image_path') }}/{{ $course->image }}"
+                                        alt="{{ $course->name }}" class="rounded-t-2xl" /></figure>
                                 <div class="p-5">
                                     <h2 class=" font-bangla font-extrabold text-xl text-black">{{ $course->fullName }}
                                     </h2>
                                     {!! $course->shortDesc !!}
-                                <div class=" font-bold">Package: <span class="text-red-500">{{$course->package->name}}</span></div>
+                                    <div class=" font-bold">Package: <span
+                                            class="text-red-500">{{ $course->package->name }}</span></div>
                                     <div class="flex w-full justify-center text-base font-normal px-3">
-                                        <a href="{{route("register")}}"
+                                        <a href="{{ route('register') }}"
                                             class="bg-gradient-to-r w-full text-center from-blue-600 to-purple-500 hover:from-purple-400 hover:to-blue-400 text-white font-bold py-2 px-4 rounded-full">
                                             Join Now</a>
                                     </div>
@@ -60,5 +62,9 @@
                     </div>
 
                 </div>
+@isset($all)
+@else
+<a class="btn btn-primary mt-5" href="{{route("allcourse")}}">All Programs</a>
+@endisset
     </section>
 </div>

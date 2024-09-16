@@ -132,28 +132,28 @@
                 <img src="/assets/image/Artboard 1.png" alt="Icon 1">
             </div>
             <div class="counter-number">75+</div>
-            <div class="counter-description"> <font face="hind siliguri"></font> ১৪তম, ২০তম, ৩৩তম, ৪০তম, ও ৪৯তমসহ  শুধুমাত্র ২০২৩-২৪ শিক্ষাবর্ষে ঢাকা বিশ্ববিদ্যালয়ে ৭৫+ শিক্ষার্থীর বিষ্ময়কর সাফল্য। </font></DIV>
+            <div class="counter-description"> <font face="hind siliguri"> ১৪তম, ২০তম, ৩৩তম, ৪০তম, ও ৪৯তমসহ  শুধুমাত্র ২০২৩-২৪ শিক্ষাবর্ষে ঢাকা বিশ্ববিদ্যালয়ে ৭৫+ শিক্ষার্থীর বিষ্ময়কর সাফল্য। </font></DIV>
         </div>
         <div class="counter">
             <div class="counter-icon">
                 <img src="/assets/image/Artboard 2.png" alt="Icon 2">
             </div>
             <div class="counter-number">30+</div>
-            <div class="counter-description"> <font face="hind siliguri"></font> ১৪তম, ২০তম, ৩৩তম, ৪০তম, ও ৪৯তমসহ  শুধুমাত্র ২০২৩-২৪ শিক্ষাবর্ষে ঢাকা বিশ্ববিদ্যালয়ে ৭৫+ শিক্ষার্থীর বিষ্ময়কর সাফল্য। </font></div>
+            <div class="counter-description"> <font face="hind siliguri"> ১৪তম, ২০তম, ৩৩তম, ৪০তম, ও ৪৯তমসহ  শুধুমাত্র ২০২৩-২৪ শিক্ষাবর্ষে ঢাকা বিশ্ববিদ্যালয়ে ৭৫+ শিক্ষার্থীর বিষ্ময়কর সাফল্য। </font></div>
         </div>
         <div class="counter">
             <div class="counter-icon">
                 <img src="/assets/image/Artboard 3.png" alt="Icon 3">
             </div>
             <div class="counter-number">650+</div>
-            <div class="counter-description"><font face="hind siliguri"></font> ১৪তম, ২০তম, ৩৩তম, ৪০তম, ও ৪৯তমসহ  শুধুমাত্র ২০২৩-২৪ শিক্ষাবর্ষে ঢাকা বিশ্ববিদ্যালয়ে ৭৫+ শিক্ষার্থীর বিষ্ময়কর সাফল্য। </font></div>
+            <div class="counter-description"><font face="hind siliguri"> ১৪তম, ২০তম, ৩৩তম, ৪০তম, ও ৪৯তমসহ  শুধুমাত্র ২০২৩-২৪ শিক্ষাবর্ষে ঢাকা বিশ্ববিদ্যালয়ে ৭৫+ শিক্ষার্থীর বিষ্ময়কর সাফল্য। </font></div>
         </div>
         <div class="counter">
             <div class="counter-icon">
                 <img src="/assets/image/Artboard 4.png" alt="Icon 4">
             </div>
             <div class="counter-number">100+</div>
-            <div class="counter-description"><font face="hind siliguri"></font> ১৪তম, ২০তম, ৩৩তম, ৪০তম, ও ৪৯তমসহ  শুধুমাত্র ২০২৩-২৪ শিক্ষাবর্ষে ঢাকা বিশ্ববিদ্যালয়ে ৭৫+ শিক্ষার্থীর বিষ্ময়কর সাফল্য। </font></div>
+            <div class="counter-description"><font face="hind siliguri"> ১৪তম, ২০তম, ৩৩তম, ৪০তম, ও ৪৯তমসহ  শুধুমাত্র ২০২৩-২৪ শিক্ষাবর্ষে ঢাকা বিশ্ববিদ্যালয়ে ৭৫+ শিক্ষার্থীর বিষ্ময়কর সাফল্য। </font></div>
         </div>
     </div>
 
@@ -164,7 +164,7 @@
 </body>
 
 
-<div  style="background-color: LightCyan ;text-align:center">
+<div  class="bg-[LightCyan] flex justify-center">
 
       <br>
    <br>
@@ -181,7 +181,7 @@
    <table border="2" width="70%" padding="10px">
 
        <tr>
-           <th><img src="/assets/image/post.png" width="400px" height="400px">
+           <th><img src="{{asset('assets/image/post.png')}}" width="400px" height="400px">
            </th>
 
            <td> &nbsp</td>

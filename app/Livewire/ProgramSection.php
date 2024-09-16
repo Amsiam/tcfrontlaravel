@@ -20,7 +20,10 @@ class ProgramSection extends Component
             return $q->where("classs_id",$this->classs);
         })->when($this->type,function($q){
             return $q->where("type",$this->type);
-        })->get();
+        })->when(!$this->type && !$this->classs, function ($q) {
+            return $q->where("featured", 1);
+        })
+        ->get();
 
     }
 

@@ -122,25 +122,24 @@
                     Now</a>
 
          &nbsp
-         <a href="https://png.pngtree.com/png-clipart/20220704/original/pngtree-coming-soon-banner-style-png-image_8316626.png">
-    <button
-        style="
-            background: linear-gradient(45deg, #ff6b6b, #f7e627, #6bffb3, #6bafff, #ab6bff);
-            background-size: 300% 300%;
-            color: white;
-            padding: 10px 30px;
-            border: none;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-position 0.5s, transform 0.2s;"
-        onmouseover="this.style.backgroundPosition='right center'; this.style.transform='scale(1.05)';"
-        onmouseout="this.style.backgroundPosition='left center'; this.style.transform='scale(1)';"
-        onmousedown="this.style.transform='scale(0.95)';"
-        onmouseup="this.style.transform='scale(1)';">
+         <a href="{{ route('login') }}" style="
+         background: linear-gradient(45deg, #ff6b6b, #f7e627, #6bffb3, #6bafff, #ab6bff);
+         background-size: 300% 300%;
+         color: white;
+         padding: 10px 30px;
+         border: none;
+         border-radius: 50px;
+         font-size: 18px;
+         font-weight: bold;
+         cursor: pointer;
+         transition: background-position 0.5s, transform 0.2s;"
+     onmouseover="this.style.backgroundPosition='right center'; this.style.transform='scale(1.05)';"
+     onmouseout="this.style.backgroundPosition='left center'; this.style.transform='scale(1)';"
+     onmousedown="this.style.transform='scale(0.95)';"
+     onmouseup="this.style.transform='scale(1)';">
+
         Login
-    </button>
+
 
 
                   </a>
